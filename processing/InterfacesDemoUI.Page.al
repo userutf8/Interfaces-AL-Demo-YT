@@ -43,10 +43,10 @@ page 50151 "Interfaces Demo UI"
 
                 trigger OnAction()
                 var
-                    InterfacesDemoProcessing: Codeunit "Interfaces Demo Processing";
-                    HttpClientFactory: Codeunit "Http Client Factory";
                     MockHttpClient: Codeunit "Mock Http Client";
                     MockHttpResponseMessage: Codeunit "Mock Http Response Message";
+                    InterfacesDemoProcessing: Codeunit "Interfaces Demo Processing";
+                    HttpClientFactory: Codeunit "Http Client Factory";
                 begin
                     HttpClientFactory.SetHttpClient(MockHttpClient);
                     HttpClientFactory.SetResponseMessage(MockHttpResponseMessage);
@@ -69,6 +69,7 @@ page 50151 "Interfaces Demo UI"
             }
         }
     }
+
     trigger OnInit()
     begin
         UrlText := 'https://www.google.com/search?q=real+days+tech+dayz';
