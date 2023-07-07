@@ -69,6 +69,10 @@ page 50151 "Interfaces Demo UI"
             }
         }
     }
+    trigger OnInit()
+    begin
+        UrlText := 'https://www.google.com/search?q=real+days+tech+dayz';
+    end;
 
     var
         UrlText: Text;

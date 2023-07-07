@@ -10,6 +10,9 @@ codeunit 50153 "Mock Http Client" implements IHttpClient
 
     local procedure MockResponseMessage(Requestmessage: HttpRequestMessage; var MockHttpResponseMessage: Codeunit "Mock Http Response Message")
     begin
+        // Your parser logic is here
+        // ...
+        // I just simply send code 200:
         MockHttpResponseMessage.Init(false, true, 200, '', '{"status": "all good!"}');
     end;
 

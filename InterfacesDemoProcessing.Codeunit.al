@@ -15,7 +15,7 @@ codeunit 50156 "Interfaces Demo Processing"
         MyHttpRequestMessage: HttpRequestMessage;
     begin
         if Url = '' then
-            Url := 'https://www.google.com/search?q=real+days+tech+dayz';
+            Error('Url is empty');
 
         MyHttpRequestMessage.SetRequestUri(Url);
         MyHttpRequestMessage.Method := Method;
