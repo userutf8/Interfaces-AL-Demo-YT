@@ -72,7 +72,7 @@ page 50151 "Interfaces Demo UI"
 
     trigger OnInit()
     begin
-        UrlText := 'https://www.google.com/search?q=real+days+tech+dayz';
+        UrlText := 'https://api.open-meteo.com/v1/forecast?latitude=8.41&longitude=115.10&current_weather=true';
     end;
 
     var
